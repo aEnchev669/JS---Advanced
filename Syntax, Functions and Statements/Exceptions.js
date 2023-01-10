@@ -5,5 +5,6 @@ let cat =
 
 cat.name = 'Ivan';
 
-console.log(cat.name);
+console.log("The cat's name is ${}");
 console.log(cat.age);
+                                                           
