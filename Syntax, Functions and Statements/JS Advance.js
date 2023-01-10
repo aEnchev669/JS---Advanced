@@ -17,8 +17,6 @@ function start() {
 
 const qw = 'ivan';
 
-let qe = 'Ivan';
 
-qw = qe;
 
 console.log(qw);
