@@ -10,7 +10,7 @@ function walk(steps, footprint, speed)
     const timeInMin = Math.floor(time / 60);
     const timeInSec = Math.floor(time % 60);
     const totalMins = Math.round(timeInMin + bonusMins);
-    console.log(`${timeInH}:${totalMins}:${timeInSec}`);
+    console.log(`0${timeInH}:${totalMins}:${timeInSec}`);
     
 
 }
