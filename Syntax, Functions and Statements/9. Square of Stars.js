@@ -1,5 +1,9 @@
 function stars(num)
 {
+    if (num == 0)
+    {
+     num = 5;
+    }
   let sb = '';
   for (let k = 1; k <= num; k++) 
   {
