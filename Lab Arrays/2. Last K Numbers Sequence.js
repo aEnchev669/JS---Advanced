@@ -1,20 +1,25 @@
 function lastNum (n, k)
 {
     let sum = 0;
-    let array = [1 ,1, 2];
-    let rounds = 0;
-    for (let i = 3; i < n; i++)
+    let array = [1];
+    let times = 0;
+    for (let i = 1; i < n; i++)
     {
-        for (let j = i- 1; j > rounds; j--) 
+        for (let s = i - 1 ; s >= 0; s--)
         {
-           sum += array[j];
+            if(times == k)
+            {
+                break;
+            }
+            sum += array[s];
+            times++;
         }
-        rounds+=1;
+       times = 0;
         array.push(sum);
         sum = 0;
     }
 
-    console.log(array);
+    return (array);
 }
 
-lastNum(6,3);
+lastNum(8, 2);
