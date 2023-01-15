@@ -1,4 +1,4 @@
-function equal(arr){
+function equalNeighbors(arr){
 
     let sum = 0;
     for (let i = 0; i < arr.length - 1; i++) {
@@ -24,4 +24,4 @@ function equal(arr){
     return(sum);
 }
 
-equal([[2, 2, 5, 7, 4], [4, 0, 5, 3, 4], [2, 5, 5, 4, 2]]);
+equalNeighbors([[2, 2, 5, 7, 4], [4, 0, 5, 3, 4], [2, 5, 5, 4, 2]]);
