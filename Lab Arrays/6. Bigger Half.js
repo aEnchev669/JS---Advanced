@@ -7,5 +7,5 @@ function biggerHalf(array)
   return(array);
 }
 
-biggerHalf([3, 19, 14, 7, 2, 19, 6])
+biggerHalf()
 
