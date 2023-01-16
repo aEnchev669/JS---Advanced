@@ -8,17 +8,18 @@ function magicMatrix(arr) {
             else {
                 sum[1] += arr[row][col];
             }
-            
-
         }
         if (sum[0] != sum[1] && sum[1] != 0) {
             
-            console.log(false);
-            return;
+            return(false); 
         }
         sum[1] = 0;
     }
-    console.log(true)
+    return(true);
 }
 
-magicMatrix([[1, 0, 0], [0, 0, 1], [0, 1, 0]]);
+console.log(magicMatrix([[4, 5, 6],
+
+    [6, 5, 4],
+    
+    [5, 5, 5]]));
