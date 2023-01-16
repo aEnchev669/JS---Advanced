@@ -16,4 +16,4 @@ function addNRemove(arr) {
     console.log(  result.length != 0 ? result.join('\n') : 'Empty');
 }
 
-addNRemove(['remove', 'remove', 'remove']);
+addNRemove();
