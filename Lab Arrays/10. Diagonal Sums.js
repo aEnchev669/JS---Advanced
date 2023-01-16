@@ -10,4 +10,4 @@ function diagonal(arr){
     console.log(`${sum1} ${sum2}`)
 }
 
-diagonal([[20, 40],[10, 60]])
+diagonal()
