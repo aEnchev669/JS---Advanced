@@ -14,4 +14,4 @@ return(biggestNum);
 
 }
 
-biggestEl([[20, 50, 10], [8, 33, 145]]);
+biggestEl();
