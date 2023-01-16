@@ -12,4 +12,4 @@ console.log(myArr[1.4]);
 
 console.log(myArr[-2]);
 
-console.log(myArr['gosho']);
+console.log(myArr['Gooosho']);
