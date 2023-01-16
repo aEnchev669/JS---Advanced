@@ -11,4 +11,4 @@ function even(arr)
   console.log(myString);
 }
 
-even(['20', '30', '40', '50', '60']);
+even();
