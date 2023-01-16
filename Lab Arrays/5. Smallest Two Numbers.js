@@ -4,4 +4,4 @@ function numbers(arr){
     console.log(arr[0], arr[1]);
 }
 
-numbers([30, 15, 50, 5]);
+numbers();
