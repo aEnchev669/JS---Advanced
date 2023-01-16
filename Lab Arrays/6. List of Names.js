@@ -8,10 +8,4 @@ function list(arr){
     
 }
 
-list(["John",
-
-"Bob",
-
-"Christina",
-
-"Ema"]);
+list();
