@@ -10,4 +10,4 @@ function oddPositions(arr) {
     return (results);
 }
 
-oddPositions([10, 15, 20, 25]);
+oddPositions();
