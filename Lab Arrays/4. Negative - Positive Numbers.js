@@ -12,4 +12,4 @@ function numbers(arr) {
     console.log(result.join('\n'));
 }
 
-numbers([3, -2, 0, -1]);
+numbers();
