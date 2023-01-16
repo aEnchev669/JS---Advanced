@@ -5,4 +5,4 @@ function rotate(arr, times) {
     console.log(arr.join(' '));
 }
 
-rotate(['Banana', 'Orange', 'Coconut', 'Apple'], 15);
+rotate();
