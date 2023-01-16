@@ -22,4 +22,4 @@ function lastNum (n, k)
     return (array);
 }
 
-lastNum(8, 2);
+lastNum();
