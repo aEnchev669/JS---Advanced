@@ -32,7 +32,7 @@ function factory({ model, power, color, carriage, wheelsize }) {
         },
         wheels
     };
-    console.table(car);
+    return car;
 }
 
 factory({
