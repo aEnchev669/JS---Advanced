@@ -34,12 +34,12 @@ function solve() {
   const currCase = document.getElementById('naming-convention').value;
   const result = document.getElementById('result');
 
-  const toPascal = (text) => {
+  const toPascal = (text) => 
     text
       .split(" ")
       .map(i => i[0].toUpperCase() + i.slice(1).toLowerCase())
       .join("");
-  }
+  
 
   const toCamel = (text) => {
 
