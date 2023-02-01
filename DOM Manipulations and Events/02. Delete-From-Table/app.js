@@ -11,8 +11,5 @@ function deleteByEmail() {
             deleted = true;
         }
     }
-    document.getElementById('result').textContent = deleted ? 'Deleted' : 'Not found';
-    
-       
-    
+    document.getElementById('result').textContent = deleted ? 'Deleted.' : 'Not found.';   
 }
