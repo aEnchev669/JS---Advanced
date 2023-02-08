@@ -1,0 +1,14 @@
+{
+  "name": "unit-testing-and-error-handling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1. Sub Sum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AE"
+  ],
+  "author": "",
+  "license": "ISC"
+}
