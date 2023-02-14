@@ -5,16 +5,55 @@ function solve() {
     const inputBirth = document.getElementById('birth');
     const inputPosition = document.getElementById('position');
     const inputSalary = document.getElementById('salary');
-   //    const salarySum = document.getElementById('sum');
+    const tBody = document.getElementById('tbody');
+    const salarySum = document.getElementById('sum');
+    let salary = 0;
+    document.getElementById('add-worker').addEventListener('click', (e) => {
+        e.preventDefault();
+        if (inputFName.value && inputName.value && inputEmail.value && inputBirth.value && inputPosition.value && inputSalary.value) {
 
-    console.log(inputFName);
-    console.log(inputName);
-    console.log(inputEmail.value);
-    console.log(inputBirth.value);
-    console.log(inputPosition.value);
-    console.log(inputSalary.value);
-    // console.log(salarySum.value);
+            const tr = createElement('tr');
+            createElement('td', `${inputFName.value}`, tr);
+            createElement('td', `${inputName.value}`, tr);
+            createElement('td', `${inputEmail.value}`, tr);
+            createElement('td', `${inputBirth.value}`, tr);
+            createElement('td', `${inputPosition.value}`, tr);
+            createElement('td', `${inputSalary.value}`, tr);
 
-    
+            const td = createElement("td", "", tr);
+            let fireBtn = createElement('button', 'Fired', td);
+            fireBtn.setAttribute('class', 'fired');
+            let editBtn = createElement('button', 'Edit', td);
+            editBtn.setAttribute('class', 'edit');
+            tBody.appendChild(tr);
+
+            salary += Number(inputSalary.value);
+            salarySum.textContent = salary.toFixed(2);
+
+            inputFName.value = '';
+            inputName.value = '';
+            inputEmail.value = '';
+            inputBirth.value = '';
+            inputPosition.value = '';
+            inputSalary.value = '';
+
+            editBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+             const target = e.target.parentNode.parentNode;
+             console.log((target).closest('td'));
+            });
+        }
+    });
+
+    function createElement(type, content, parent) {
+        const element = document.createElement(type);
+        element.textContent = content;
+
+        if (parent) {
+            parent.appendChild(element);
+        }
+        return element;
+    }
+
 }
 solve()
