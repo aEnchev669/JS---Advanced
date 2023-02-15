@@ -38,12 +38,14 @@ function solve() {
             inputSalary.value = '';
 
             editBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-             const target = e.target.parentNode.parentNode;
-             console.log((target).closest('td'));
+                editWorker(e, inputFName.value, inputName.value, inputEmail.value, inputBirth.vlaue, inputPosition.value, inputSalary.value);
             });
         }
     });
+
+    function editWorker(e, fName, lName, email, birth, position, salary) {
+
+    }
 
     function createElement(type, content, parent) {
         const element = document.createElement(type);
