@@ -1,5 +1,5 @@
 function solve() {
-    const inputFName = document.getElementById('fname');
+   const inputFName = document.getElementById('fname');
     const inputName = document.getElementById('lname');
     const inputEmail = document.getElementById('email');
     const inputBirth = document.getElementById('birth');
@@ -55,7 +55,7 @@ function solve() {
             parent.appendChild(element);
         }
         return element;
+    
     }
-
+    solve()
 }
-solve()
