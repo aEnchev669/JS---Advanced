@@ -8,14 +8,19 @@ function onClick(event) {
     const input = document.getElementById('towns');
     const data = input.value.split(', ');
 
-    const cardTemplate = html`
+    renderComponentTowns(data);
+
+    input.value = '';
+}
+const renderComponentTowns = (data) => {
+    const root = document.getElementById('root');
+    render(cardTemplate, root);
+}
+
+const cardTemplate = html`
     <ul>
     ${data.map((item) => html`<li> ${item}</li>`)}
     </ul>
     `;
 
-    const root = document.getElementById('root');
-    render(cardTemplate, root);
 
-    input.value = '';
-}
